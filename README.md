@@ -1,35 +1,17 @@
 # sonyavindicator
 
-Indicator for Sony AV receivers in the local network. The indicator automatically detects the AV indicator by scanning for port 33335 in the local network.
-
-Currently this indicator works well for the STR-DN860. It might work on other devices as well, but since I don't own other devices feedback is welcome. This project is open for pull requests.
-
-## Installation
-
-    $ git clone https://github.com/aschaeffer/sony-av-indicator.git
-    $ cd sony-av-indicator
-    $ sudo -H pip3 install . --no-cache-dir --upgrade
-
-### Optional
-
-Add `sony-av-indicator.desktop` to the list of `interested-media-players`:
-
-    $ gsettings set com.canonical.indicator.sound interested-media-players "['sonyavindicator.desktop']"
-
-## Usage
-
-    $ sonyavindicator
-
-## System requirements
-
-* Ubuntu 16.04
-* Sony STR-DN-860 (other devices might work, but not tested)
-
-## Authors
-
+Fork of aschaeffer/sony-av-indicator
+Controlling a Sony AV receivers on the local network. IP/port 33335 on local network.
+Currently this works with the Sony STR-DN860. Plans are to take this to STR-DN1060.
+Thanks to original authors
 * Andreas Schaeffer
 * Michael Kapuscik
 
 ## License
-
 GNU GENERAL PUBLIC LICENSE, Version 3
+
+Goto the original repo :)
+
+Testing show that some input selectors are not the same on the receivers.
+Other functions are the same. The autofind function timed out before receiver was found.
+Don't download I've might have wrecked it.
